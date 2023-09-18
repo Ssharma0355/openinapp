@@ -104,7 +104,7 @@ export default function AddNewAccount() {
                                         viewBox="0 0 24 24"
                                         stroke-width="1.5"
                                         stroke="currentColor"
-                                        class="h-6 w-6">
+                                        class="h-6 w-6 text-black">
                                         <path
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
@@ -114,8 +114,8 @@ export default function AddNewAccount() {
                             </div>
                             <div>
                                 <div className="flex justify-between p-6">
-                                    <button className={`border-b-4 py-2 mr-4 bg-white ${currentTab === 'basic' ? 'border-blue-700' : 'border-gray-700 '}`} onClick={() => onTabChange('basic')}>Basic</button>
-                                    <button className={`border-b-4 py-2 mr-4 bg-white ${currentTab === 'social' ? 'border-blue-700' : 'border-gray-700'}`} onClick={() => onTabChange('social')}>Contact</button>
+                                    <button className={`border-b-4 py-2 mr-4 bg-white text-black ${currentTab === 'basic' ? 'border-blue-700' : 'border-gray-700 '}`} onClick={() => onTabChange('basic')}>Basic</button>
+                                    <button className={`border-b-4 py-2 mr-4 bg-white text-black ${currentTab === 'social' ? 'border-blue-700' : 'border-gray-700'}`} onClick={() => onTabChange('social')}>Contact</button>
                                 </div>
                                 <form className="rounded-lg px-6">
                                     <div className={currentTab === 'basic' ? 'block' : 'hidden'}>
@@ -136,7 +136,7 @@ export default function AddNewAccount() {
                                 <div className="float-right mr-6 mb-3 text-white rounded-lg">
                                     <button className={`${currentTab === 'basic' ? 'block' : 'hidden'} bg-blue-700 px-3 py-2`} onClick={() => onTabChange('social')}>Next</button>
                                     <div className="flex">
-                                        <button className={`${currentTab === 'social' ? 'block' : 'hidden'} text-black border border-black px-3 py-2`} onClick={() => onTabChange('basic')}>Back</button>
+                                        <button className={`${currentTab === 'social' ? 'block' : 'hidden'} text-black bg-white border border-black px-3 py-2`} onClick={() => onTabChange('basic')}>Back</button>
                                         <button className={`${currentTab === 'social' ? 'block' : 'hidden'} ml-3 bg-blue-700 px-3 py-2`} data-te-modal-dismiss onClick={reset}>Done</button>
                                     </div>
                                 </div>

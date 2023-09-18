@@ -41,7 +41,7 @@ export default function LoginForm() {
                     <div className="rounded-lg py-2 bg-white px-3">
                         <button onClick={() => onGoogleSignIn()} className="flex items-center m-0 bg-white">
                             <Image alt="apple" src={apple} width={'50px'} />
-                            <span className="ml-3 text-black">Sign in with Google</span>
+                            <span className="ml-3 text-black">Sign in with Apple</span>
                         </button>
                     </div>
                 </div>
