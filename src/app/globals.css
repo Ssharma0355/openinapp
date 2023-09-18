@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.left_panel,
+.right_panel {
+  height: 100vh;
+  width: 50%;
+}
+
+.left_panel {
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  background: linear-gradient(#4285f4, #286de0);
+}
+
+.left_body {
+  height: calc(100vh - 264px);
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #F8FAFF;
+  overflow: hidden;
+}
+
+html,
+body,
+h1,
+h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+  padding: 60px 73px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Poppins';
+}
+
+.signin {
+  color: #000;
+
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+
+.board {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 88px;
+  padding: 214px 110px;
+  color: #ffffff;
+  width: 246px;
+
+}
+
+.input-form {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  width: 100%;
+  display: block;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  background-color: #4285f4;
+  padding: 15px auto !important;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.forgetpassword {
+  color: #346BD4;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-panel {
+  position: sticky;
+  height: calc(100vh - 40px);
+  background: linear-gradient(#4285f4, #286de0);
+}
+
+.dashfont {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.list {
+  color: #ffffff;
+  font-size: 18px;
+
+}
+.profit{
+ background: #E9F9EB;
+  
+  color: green;
+}
+.bottom{
+  position: absolute;
+  bottom: 40px;
+
+}
+
+#chart-bar-double-datasets canvas{
+  height: 300px !important;
+  width: auto !important;
+}
+#chartDoughnut canvas{
+  height: 200px !important;
+  width: auto !important;
+}
+.formbtn{
+  background-color: #346BD4;
+
+
+
+}
