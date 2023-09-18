@@ -90,10 +90,10 @@ export default function AddNewAccount() {
                     data-te-modal-dialog-ref
                     class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-full translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
                     <div
-                        class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
-                        <div>
+                        class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-clip-padding text-current shadow-lg outline-none">
+                        <div className="bg-white rounded-md">
                             <div className='flex justify-between w-full px-6 py-4 border-t-0 border-b border-gray-300'>
-                                <h3>Add New Profile</h3>
+                                <h3 className="text-2xl text-black">Add New Profile</h3>
                                 <button
                                     type="button"
                                     class="w-fit rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
@@ -114,10 +114,10 @@ export default function AddNewAccount() {
                             </div>
                             <div>
                                 <div className="flex justify-between p-6">
-                                    <button className={`border-b-4 py-2 mr-4 ${currentTab === 'basic' ? 'border-blue-700' : 'border-gray-700'}`} onClick={() => onTabChange('basic')}>Basic</button>
-                                    <button className={`border-b-4 py-2 mr-4 ${currentTab === 'social' ? 'border-blue-700' : 'border-gray-700'}`} onClick={() => onTabChange('social')}>Contact</button>
+                                    <button className={`border-b-4 py-2 mr-4 bg-white ${currentTab === 'basic' ? 'border-blue-700' : 'border-gray-700 '}`} onClick={() => onTabChange('basic')}>Basic</button>
+                                    <button className={`border-b-4 py-2 mr-4 bg-white ${currentTab === 'social' ? 'border-blue-700' : 'border-gray-700'}`} onClick={() => onTabChange('social')}>Contact</button>
                                 </div>
-                                <form className="bg-white rounded-lg px-6">
+                                <form className="rounded-lg px-6">
                                     <div className={currentTab === 'basic' ? 'block' : 'hidden'}>
                                         <label for="email" className="block" >Enter Name*</label>
                                         <input placeholder="Eg. John Doe" className="input-form" value={name} onChange={(e) => setName(e.target.value)} />
@@ -136,7 +136,7 @@ export default function AddNewAccount() {
                                 <div className="float-right mr-6 mb-3 text-white rounded-lg">
                                     <button className={`${currentTab === 'basic' ? 'block' : 'hidden'} bg-blue-700 px-3 py-2`} onClick={() => onTabChange('social')}>Next</button>
                                     <div className="flex">
-                                        <button className={`${currentTab === 'social' ? 'block' : 'hidden'} bg-white text-black border border-black px-3 py-2`} onClick={() => onTabChange('basic')}>Back</button>
+                                        <button className={`${currentTab === 'social' ? 'block' : 'hidden'} text-black border border-black px-3 py-2`} onClick={() => onTabChange('basic')}>Back</button>
                                         <button className={`${currentTab === 'social' ? 'block' : 'hidden'} ml-3 bg-blue-700 px-3 py-2`} data-te-modal-dismiss onClick={reset}>Done</button>
                                     </div>
                                 </div>
