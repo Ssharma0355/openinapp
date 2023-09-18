@@ -12,7 +12,7 @@ export default function Home() {
     const router = useRouter();
     useEffect(() => {
         if (status === 'unauthenticated') {
-            router.replace('/auth');
+            router.replace('/auth/signIn');
         }
 
     }, [status, router])

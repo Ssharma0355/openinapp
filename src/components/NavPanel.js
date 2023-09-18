@@ -11,22 +11,22 @@ export default function NavPanel() {
 
     const dashboardLink = [
         {
-            label: 'dashboard',
+            label: 'Dashboard',
             image: dashboard,
             url: '/dashboard'
         },
         {
-            label: 'transactions',
+            label: 'Transactions',
             image: transactions,
             url: '/transactions'
         },
         {
-            label: 'schedule',
+            label: 'Schedule',
             image: schedule,
             url: '/schedule'
         },
         {
-            label: 'user',
+            label: 'User',
             image: user,
             url: '/user'
         },
@@ -46,7 +46,7 @@ export default function NavPanel() {
                 <div className="py-8">
                     <ul className="">
                         {dashboardLink.map((link) => (
-                            <li key={link.slug} className="mx-3 mb-3">
+                            <li key={link.label} className="mx-3 mb-3">
                                 <Link href={`/${link.url}`} className='flex text-white'>
                                     <Image alt="link.image" src={link.image} width={'50px'} />
                                     <span className='ml-3'>{link.label}</span>
