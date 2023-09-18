@@ -11,11 +11,11 @@ export default function Home() {
     const { data: session, status } = useSession();
     const router = useRouter();
     useEffect(() => {
-        if (status === 'unauthenticated') {  
+        if (status === 'unauthenticated') {
             router.replace('/auth');
         }
 
-    }, [status])
+    }, [status, router])
     return (
         <main className="flex">
             <div className="w-1/5 pr-5 sticky">

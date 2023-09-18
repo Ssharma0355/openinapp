@@ -12,23 +12,22 @@ export default function LoginForm() {
 
     return (
         <div className="right_panel p-36">
-
             <form>
                 <div className='signin'><h2>Sign In</h2></div>
                 <p className="mt-1 text-sm leading-6 text-gray-600">
                     Sign in your account
                 </p>
                 <div className="flex justify-between mt-5">
-                    <div className="rounded-lg bg-white px-3 py-1">
-                        <button onClick={() => signIn()} className="flex">
-                            <Image src={google} width={'50px'} />
-                            <span className="ml-3">Sign in with Google</span>
+                    <div className="rounded-lg bg-white py-2 px-3">
+                        <button onClick={() => signIn()} className="flex items-center m-0 bg-white">
+                            <Image alt="google" src={google} width={'50px'} />
+                            <span className="ml-3 text-black">Sign in with Google</span>
                         </button>
                     </div>
-                    <div className="rounded-lg bg-white px-3 py-1">
-                        <button onClick={() => signIn('credentials' )} className="flex">
-                            <Image src={apple} width={'50px'} />
-                            <span className="ml-3">Sign in with Google</span>
+                    <div className="rounded-lg py-2 bg-white px-3">
+                        <button onClick={() => signIn('credentials')} className="flex items-center m-0 bg-white">
+                            <Image alt="apple" src={apple} width={'50px'} />
+                            <span className="ml-3 text-black">Sign in with Google</span>
                         </button>
                     </div>
                 </div>
@@ -37,13 +36,12 @@ export default function LoginForm() {
                     <input type="text" name="email" placeholder="johndoe@gmail.com" className="input-form" />
                     <label for="password" className="block">Password</label>
                     <input type="password" name="password" className="input-form" />
-                    <Link className="forgetpassword" href={`/forget-password`}>Forgot password</Link>
+                    <Link className="forgetpassword" href={`/`}>Forgot password</Link>
                     <button className="h-11">Sign In</button>
                 </form>
-                <div className="account mt-2.5	">
-
-                    <span className="register">Don't have acccount? </span>
-                    <Link className="register forgetpassword" href={`/register-here`}> Register here</Link>
+                <div className="account mt-2.5">
+                    <span className="register">{`Don't have acccount?`}</span>
+                    <Link className="register forgetpassword" href={`/`}> Register here</Link>
                 </div>
 
             </form>

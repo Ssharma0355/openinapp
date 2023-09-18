@@ -14,12 +14,12 @@ export default function Navigation() {
                     <div className="flex bg-white rounded-lg px-2">
                         {/* search-bar */}
                         <input type="text" />
-                    <Image src={search} width={'50px'} />    
+                    <Image alt="search" src={search} width={'50px'} />    
                     </div>
                     <div className="flex">
                         {/* profile */}
-                        <Image src={notification} width={'50px'} className="ml-3" /> 
-                        <Image src={profile} width={'50px'} className="ml-3"/> 
+                        <Image alt="notify" src={notification} width={'50px'} className="ml-3" /> 
+                        <Image alt="profile" src={profile} width={'50px'} className="ml-3"/> 
                     </div>
                 </div>
 

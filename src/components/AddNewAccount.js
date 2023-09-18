@@ -43,7 +43,7 @@ export default function AddNewAccount() {
                 data-te-ripple-init
                 data-te-ripple-color="light">
                 <div className="flex justify-center">
-                    <Image src={add} key="add" width={50} />
+                    <Image alt="add" src={add} key="add" width={50} />
                 </div>
             </button>
             <div className={`${profile.name ? 'block' : 'hidden'} w-full h-full p-6`}>
@@ -51,13 +51,13 @@ export default function AddNewAccount() {
                 <div className="flex mt-28">
                     <div className="w-1/2 text-sm flex items-center">
                         <div className="bg-lime-100 p-2 rounded-full">
-                            <Image src={require('./icons/phone.svg')} key="phone" width={17} height={17} />
+                            <Image alt="phone" src={require('./icons/phone.svg')} key="phone" width={17} height={17} />
                         </div>
                         <span className="ml-3 underline">{profile.phone}</span>
                     </div>
                     <div className="w-1/2 text-sm flex items-center">
                         <div className="bg-red-100 p-2 rounded-full">
-                            <Image src={require('./icons/insta.svg')} key="phone" width={17} height={17} />
+                            <Image alt="insta" src={require('./icons/insta.svg')} key="insta" width={17} height={17} />
                         </div>
                         <span className="ml-3 underline">{profile.instagram}</span>
                     </div>
@@ -65,13 +65,13 @@ export default function AddNewAccount() {
                 <div className="flex mt-6">
                     <div className="w-1/2 text-sm flex items-center">
                         <div className="bg-violet-100 p-2 rounded-full">
-                            <Image src={require('./icons/mail.svg')} key="phone" width={17} height={17} />
+                            <Image alt="mail" src={require('./icons/mail.svg')} key="mail" width={17} height={17} />
                         </div>
                         <span className="ml-3 underline">{profile.email}</span>
                     </div>
                     <div className="w-1/2 text-sm flex items-center">
                         <div className="bg-red-100 p-2 rounded-full">
-                            <Image src={require('./icons/youtube.svg')} key="phone" width={17} height={17} />
+                            <Image alt="youtube" src={require('./icons/youtube.svg')} key="youtube" width={17} height={17} />
                         </div>
                         <span className="ml-3 underline">{profile.youtube}</span>
                     </div>

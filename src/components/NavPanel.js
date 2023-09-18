@@ -48,7 +48,7 @@ export default function NavPanel() {
                         {dashboardLink.map((link) => (
                             <li key={link.slug} className="mx-3 mb-3">
                                 <Link href={`/${link.url}`} className='flex text-white'>
-                                    <Image src={link.image} width={'50px'} />
+                                    <Image alt="link.image" src={link.image} width={'50px'} />
                                     <span className='ml-3'>{link.label}</span>
                                 </Link>
                             </li>

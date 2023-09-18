@@ -37,7 +37,7 @@ export default function LeftPanel() {
                     {socialMediaLinks.map((link) => (
                         <li key={link.slug} className="mx-3">
                             <Link href={`/${link.url}`}>
-                                <Image src={link.image} width={'50px'} />
+                                <Image alt={link.image} src={link.image} width={'50px'} />
                             </Link>
                         </li>
                     ))}
