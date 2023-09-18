@@ -66,7 +66,7 @@ export default function DashboardGraph() {
       }, []);
     
     return (
-        <div className=" bg-white rounded-lg p-6 mt-6 max-w-full rounded-md shadow-md shadow-lime-200">
+        <div className=" bg-white rounded-lg p-6 mt-6 max-w-full rounded-md shadow-md">
             <div className="flex">  <h3 className="text-black font-bold text-lg">Activities</h3></div>
             <div id="chart-bar-double-datasets" className="w-full" >
             </div>

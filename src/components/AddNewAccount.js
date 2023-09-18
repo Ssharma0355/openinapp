@@ -34,7 +34,7 @@ export default function AddNewAccount() {
     };
 
     return (
-        <div className="bg-white rounded-lg mt-6 w-1/2 rounded-md shadow-md shadow-lime-200">
+        <div className="bg-white rounded-lg mt-6 w-1/2 rounded-md shadow-md">
             <button
                 type="button"
                 className={`${profile.name ? 'hidden' : 'block'} w-full h-full`}

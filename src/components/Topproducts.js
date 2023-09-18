@@ -54,7 +54,7 @@ export default function Topproducts() {
 
 
     return (
-        <div className="bg-white rounded-lg p-6 mr-6 mt-6 w-1/2 rounded-md shadow-md shadow-lime-200">
+        <div className="bg-white rounded-lg p-6 mr-6 mt-6 w-1/2 rounded-md shadow-md">
             <div className="flex">  <h3 className="text-black font-bold text-lg">Top Products</h3></div>
             <div id="chartDoughnut" className="w-full" >
             </div>
