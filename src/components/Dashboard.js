@@ -15,7 +15,7 @@ export default function Dashboard() {
             id: 'widget1',
             icon: revenue,
             iconColor: 'bg-lime-400',
-            iconpm :"",
+            iconpm: "",
             name: 'Total Revenues',
             amount: '$2,129,430',
             profit: '+2.5%'
@@ -25,7 +25,7 @@ export default function Dashboard() {
             icon: totaltranscations,
             iconColor: 'bg-orange-300',
             name: 'Total Transaction',
-            amount:'1,520',
+            amount: '1,520',
             profit: '+1.7%'
         },
         {
@@ -51,7 +51,7 @@ export default function Dashboard() {
             <div className="flex">
                 {
                     widgetData.map((widget) => (
-                        <Widget widgetData={widget} />
+                        <Widget key={widget.id} widgetData={widget} />
                     )
                     )
                 }
@@ -59,12 +59,12 @@ export default function Dashboard() {
             </div>
             < DashboardGraph />
             <div className="flex">
-            <Topproducts />
-            <AddNewAccount/>
+                <Topproducts />
+                <AddNewAccount />
             </div>
-            
+
         </div>
-       
+
 
     )
 }
